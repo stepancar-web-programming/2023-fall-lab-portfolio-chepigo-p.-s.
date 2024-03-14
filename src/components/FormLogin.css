@@ -1,0 +1,77 @@
+.b27,
+.in-login {
+  align-self: stretch;
+}
+.b27 {
+  position: relative;
+}
+.in-login {
+  border: 0;
+  text-align:center;
+  background-color: var(--color-gray-200);
+  flex: 1;
+}
+.in-pass {
+  text-align:center;
+  border: 0;
+  background-color: var(--yellow-button);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.frame-pass {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+}
+
+.in-pass:hover {
+  opacity: 0.5;
+}
+
+.in-login:hover {
+  opacity: 0.5;
+}
+
+.b-go-login:hover {
+  opacity: 0.5;
+}
+
+.in-pass {
+  width: 100%;
+  height: 100%;
+}
+
+.b29,
+.frame-pass {
+  flex: 1;
+  position: relative;
+}
+.b-go-login,
+.f-login {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--color-goldenrod);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--bg);
+}
+.f-login {
+  background-color: var(--color-gray-300);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  padding: var(--padding-6xl);
+  justify-content: center;
+  gap: var(--gap-3xs);
+  mix-blend-mode: exclusion;
+  text-align: center;
+  font-size: var(--menu-size);
+  color: var(--color-white);
+  font-family: var(--menu);
+}
+@media screen and (max-width: 960px) {
+  .f-login {
+    display: none;
+  }
+}

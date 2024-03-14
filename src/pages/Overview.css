@@ -1,0 +1,111 @@
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.quick-start-text-frame {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-100);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.quick-start-text-frame1 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  height: 48px;
+  flex-shrink: 0;
+  margin: 20px;
+}
+.quick-start-text-readme {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  background-color: var(--options-main);
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: var(--text-readme-size);
+}
+.quick-start {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.full-instructions-text-button1 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: var(--menu-size);
+  font-family: var(--menu);
+  color: var(--color-white);
+  text-align: center;
+  justify-content: center;
+  height: 48px;
+  flex-shrink: 0;
+}
+.full-instructions-text-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-100);
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.technical-support-text-readme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  background-color: var(--options-main);
+  gap: var(--gap-6xl);
+}
+.help-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  height: 1931px;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: var(--padding-81xl);
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+  opacity: 0;
+}
+.help-body.animate {
+  animation: 0.25s ease 0s 1 normal forwards fade-in-top;
+}
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-color: var(--bg);
+  backdrop-filter: var(--effect);
+  width: 100%;
+  height: 2056px;
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--menu-size);
+  color: var(--color-white);
+  font-family: var(--menu);
+}
