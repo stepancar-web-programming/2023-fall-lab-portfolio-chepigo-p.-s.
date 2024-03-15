@@ -1,0 +1,69 @@
+.upload-text {
+  position: relative;
+  font-size: var(--text1-size);
+  font-family: var(--text);
+  color: var(--color-black);
+  text-align: center;
+}
+
+.upload-input {
+  background-color: var(--gg);
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.upload-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0 var(--padding-81xl);
+  background-color: transparent;
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-8xs);
+  background: linear-gradient(180deg, #ffc90c, #ffa800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled-button {
+  cursor: pointer;
+  border: 2px solid var(--color-black);
+  padding: 0 var(--padding-81xl);
+  background-color: transparent;
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-8xs);
+  background: linear-gradient(180deg, #ffc90c, #ffa800);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button:hover {
+  opacity: 0.5;
+}
+
+.upload-button div {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--text1-size);
+  font-family: var(--text);
+  color: var(--color-black);
+  text-align: center;
+}
+
+.img2img-bbuttons {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}

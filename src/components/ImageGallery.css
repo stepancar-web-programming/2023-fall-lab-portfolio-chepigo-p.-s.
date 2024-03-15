@@ -1,0 +1,19 @@
+.image-gallery {
+    display: grid;
+    grid-gap: 1em;
+    max-width: 70rem;
+    margin: 4rem auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+
+    .image-obj {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image-obj:hover {
+        opacity: 0.5;
+    }
+}

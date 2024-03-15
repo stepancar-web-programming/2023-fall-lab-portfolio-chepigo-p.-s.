@@ -1,0 +1,42 @@
+.input-param-body {
+  align-self: stretch;
+  background-color: var(--options-main);
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-6xl);
+  box-sizing: border-box;
+}
+.input-param-dropdown {
+  align-self: stretch;
+  flex: 1;
+  background-color: var(--gg);
+}
+.input-param-value {
+  border: 0;
+  background-color: var(--gg);
+  align-self: stretch;
+  flex: 1;
+}
+.input-param-text {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+.row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 400px;
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--menu-size);
+  color: var(--color-white);
+  font-family: var(--text);
+}

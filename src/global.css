@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --menu: "Exo 2";
+  --font-jura: Jura;
+
+  /* font sizes */
+  --menu-size: 20px;
+  --font-size-6xl: 25px;
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-white: #fff;
+  --options-main: #1f2932;
+  --bg: #1c2128;
+  --color-gray-100: #18181b;
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-gray-300: rgba(255, 255, 255, 0.1);
+  --gg: rgba(28, 33, 40, 0.95);
+  --color-darkslategray: #343639;
+  --color-black: #000;
+  --color-red: #ff0000;
+  --color-goldenrod: #f1cd41;
+
+  /* Gaps */
+  --gap-6xl: 25px;
+  --gap-31xl: 50px;
+  --gap-3xs: 10px;
+  --gap-xl: 20px;
+  --gap-mini: 15px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-8xs: 5px;
+  --padding-81xl: 100px;
+  --padding-6xl: 25px;
+  --padding-31xl: 50px;
+
+  /* border radiuses */
+  --br-7xs: 6px;
+  --br-8xs: 5px;
+
+  /* Effects */
+  --effect: blur(13px);
+}
+
+.loader {
+  margin: auto;
+}
+
+html {
+  background-color: var(--bg);
+}
+
+.image-waterfall {
+  display: flex;
+  gap: var(--gap-6xl);
+  position: relative;
+  background-color: var(--bg);
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  background-color: var(--bg);
+  padding: var(--padding-81xl);
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+}
+
+.content-body.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
+
+.generation-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  background-color: var(--bg);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--menu-size);
+  color: var(--color-white);
+  font-family: var(--font-jura);
+}
+
+@media screen and (max-width: 1200px) {
+  .statistics-screen:active {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .statistics-screen {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+.must_log_in {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin: 250px;
+}
+
+.warning_text {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}

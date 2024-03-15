@@ -1,0 +1,6 @@
+.git
+.idea
+.logs
+.pytest_cache
+backend
+node_modules

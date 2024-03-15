@@ -1,0 +1,112 @@
+.vector-icon {
+    position: relative;
+    width: 100px;
+    height: 19px;
+    object-fit: cover;
+  }
+  .logo {
+    align-self: stretch;
+    border-radius: var(--br-7xs);
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.9;
+  }
+  .b {
+    position: relative;
+    font-size: var(--menu-size);
+    font-family: var(--menu);
+    color: var(--color-white);
+    text-align: center;
+  }
+  .mainpage-button,
+  .txt2img-button {
+    align-self: stretch;
+    border-right: 1px solid var(--color-darkslategray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .help-button,
+  .mainpage-button,
+  .txt2img-button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: var(--yellow-button);
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  .mainpage-button:hover {
+    opacity: 0.5;
+  }
+  
+  .txt2img-button:hover{
+    opacity: 0.5;
+  }
+  
+  .help-button:hover {
+    opacity: 0.5;
+  }
+  
+  .login-button:hover {
+    opacity: 0.5;
+  }
+  
+  .help-button,
+  .login-text,
+  .nav-panel {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-panel {
+    width: 1178px;
+    flex-direction: row;
+    padding: 0 var(--padding-8xs);
+    box-sizing: border-box;
+  }
+  .login-text {
+    position: relative;
+    font-size: var(--menu-size);
+    font-family: var(--menu);
+    background: linear-gradient(180deg, #f9b300 54.69%, #ff0f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 100px;
+    flex-shrink: 0;
+  }
+  .header,
+  .login-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+  }
+  .login-button {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-3xs) 0;
+    background-color: var(--yellow-button);
+    border-radius: var(--br-7xs);
+    width: 100px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    opacity: 0.9;
+  }
+  .header {
+    align-self: stretch;
+    background-color: var(--color-gray-100);
+    border-bottom: 1px solid var(--bg);
+    height: 50px;
+    padding: 0 var(--padding-3xs);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 300;
+    position: fixed;
+    width: 100%;
+  }
